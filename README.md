@@ -1,10 +1,11 @@
-Bluetooth Based Wireless Robot Car
 
-Overview
+##Bluetooth Based Wireless Robot Car
+
+##Overview
 
 The Bluetooth Based Wireless Robot Car is an embedded systems project developed using the ARM7 LPC2129 microcontroller. The robot is controlled wirelessly through a Bluetooth HC-05 module using commands sent from a smartphone. It can move forward, backward, turn left, turn right, and stop based on user input. The project demonstrates wireless communication, motor control, UART communication, and real-time embedded programming.
 
-Features
+## Features
 
 - Wireless control using Bluetooth HC-05
 - Forward, backward, left, and right movement
@@ -14,49 +15,54 @@ Features
 - LCD display for movement status
 - UART communication
 - Embedded C programming
-- Designed and tested in Proteus and Keil µVision
+- Designed and tested in Proteus and Keil ÂµVision
 
-Hardware Components
+## Hardware Components
 
 - ARM7 LPC2129 Microcontroller
 - HC-05 Bluetooth Module
 - L298N/L293D Motor Driver
 - Two DC Motors
-- 16×2 LCD Display
-- Power Supply
+- 16Ã—2 LCD Display
+- Robot Chassis
+- Wheels
+- Battery Supply
 - Connecting Wires
 
-Software Requirements
+## Software Requirements
 
-- Keil µVision
+- Keil ÂµVision
 - Proteus 8 Professional
 - Embedded C
 - Flash Magic (for hardware programming)
 
-Working Principle
+## Working Principle
 
 The HC-05 Bluetooth module receives commands from a mobile phone through Bluetooth communication. These commands are transferred to the LPC2129 using UART. The microcontroller processes each command and controls the motor driver to move the robot in the desired direction. The LCD displays the current movement status, such as Forward, Backward, Left, Right, or Stop.
 
-Bluetooth Commands
+## Bluetooth Commands
 
-Command| Action
-F| Move Forward
-B| Move Backward
-L| Turn Left
-R| Turn Right
-S| Stop
+| Command | Action        |
+|---------|---------------|
+| F       | Move Forward  |
+| B       | Move Backward |
+| L       | Turn Left     |
+| R       | Turn Right    |
+| S       | Stop          |
 
-Project Structure
+## Project Structure
 
+```
 Bluetooth_Robot_Car/
-│── main.c
-│── uart.c
-│── motor.c
-│── lcd.c
-│── delay.h
-│── README.md
+â”‚â”€â”€ main.c
+â”‚â”€â”€ uart.c
+â”‚â”€â”€ motor.c
+â”‚â”€â”€ lcd.c
+â”‚â”€â”€ delay.h
+â”‚â”€â”€ README.md
+```
 
-Future Enhancements
+## Future Enhancements
 
 - Obstacle avoidance using IR or ultrasonic sensors
 - Voice-controlled robot
@@ -66,7 +72,7 @@ Future Enhancements
 - IoT and Wi-Fi control
 - GPS navigation
 
-Learning Outcomes
+## Learning Outcomes
 
 - ARM7 LPC2129 programming
 - UART communication
